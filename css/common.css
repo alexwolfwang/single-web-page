@@ -1,0 +1,449 @@
+body {
+    padding: 0 !important;
+    margin: 0 !important;
+    font-family: Verdana;
+    background-color: #f9f9f9;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    text-decoration: underline;
+}
+
+header {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    padding-left: 32px;
+    background-color: #ebebeb;
+    width: 100%;
+}
+
+#logo{
+    margin-left: -15px;
+    width: 202px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+}
+#hero {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    line-height: 28px;
+    color: #666666;
+    background-color: #dddddd;
+    -webkit-box-shadow: inset 0 3px #cccccc,
+                        inset 0 -3px #cccccc;
+    -moz-box-shadow: inset 0 3px #cccccc,
+                     inset 0 -3px #cccccc;
+    box-shadow: inset 0 3px #cccccc,
+                inset 0 -3px #cccccc;
+}
+
+.card-art {
+    width: 302px;
+    margin: 36px auto;
+    -webkit-box-shadow: -4px 4px 2px #bbbbbb;
+    -moz-box-shadow: -4px 4px 2px #bbbbbb;
+    box-shadow: -4px 4px 2px #bbbbbb;
+    border: 1px solid #a30009;
+    border-radius: 18px;
+}
+
+
+#hero p {
+    margin-bottom: 36px;
+}
+#hero strong{
+    color: black;
+}
+@media screen and (max-width: 640px){
+    .card-art {
+        margin: 24px auto;
+    }
+
+    #hero p {
+        margin-left: 80px;
+        margin-right: 80px;
+        font-size: 30px;
+        margin-bottom: 28px;
+
+    }
+}
+
+sup {
+    font-size: 16px;
+    top: -16px;
+}
+
+#title {
+    font-size: 30px;
+    color: #444444;
+    padding: 35px 38px 33px 32px;
+    background-color: #f0f0f0;
+    -webkit-box-shadow: 0 3px #ececec;
+    -moz-box-shadow: 0 3px #ececec;
+    box-shadow: 0 3px #ececec;
+    letter-spacing: -0.5px;
+
+}
+#title p {
+    margin-bottom: 0;
+}
+#title p sup{
+    font-size: 12px;
+    top: -14px;
+}
+
+@media screen and (max-width: 640px) {
+    #title {
+        font-size: 26px;
+        padding: 24px 52px 15px 60px;
+        text-align: center;
+    }
+    #title p sup{
+        font-size: 12px;
+        top: -10px;
+    }
+}
+
+#info {
+    padding: 26px 32px;
+    overflow: auto;
+    color: #444444;
+
+}
+
+@media screen and (max-width: 640px) {
+    #info {
+        padding: 35px 25px;
+    }
+}
+#info form {
+    padding-left: 0;
+    padding-right: 0;
+}
+#info .form-group {
+    padding-left: 0;
+    padding-right: 0;
+    margin-bottom: 51px;
+    font-size: 24px;
+    letter-spacing: -0.5px;
+    white-space: nowrap;
+
+}
+    #info .name ,#info .re .creditNum {
+        padding-right: 41px;
+    }
+
+    #info .phoneNum, #info .re .email {
+        padding-left: 41px;
+    }
+
+
+
+@media screen and (max-width: 640px) {
+    #info .form-group {
+        margin-bottom: 24px;
+    }
+
+    #info .detail {
+        padding: 0 !important;
+    }
+    #info .re {
+        width: 100%;
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-flex-direction: column-reverse;
+        -ms-flex-direction: column-reverse;
+        flex-direction: column-reverse;
+    }
+
+    #info .creditNum {
+        margin-bottom: 0;
+    }
+}
+#info .numbers .number {
+    margin-left: 0;
+    width: 22%;
+    float: left;
+}
+
+#info .numbers .number:not(:first-child) {
+    text-align: justify;
+    margin-left: 4%;
+}
+
+#info .form-group em {
+    font-size: 20px;
+}
+
+#info .form-group input {
+    height: 60px;
+    font-size: 18px;
+    padding-left: 20px;
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 2px #c0c0c0;
+    -moz-box-shadow: inset 0 1px 2px #c0c0c0;
+    box-shadow: inset 0 1px 2px #c0c0c0;
+}
+
+#info .creditNum sup {
+    font-size: 12px;
+    top: -10px;
+}
+
+#info .creditNum .number:not(:last-child):after {
+    content: "-";
+    position: relative;
+    display: inline-block;
+    top: -47px;
+    left: 104%;
+}
+
+#info .phoneNum sup {
+    font-size: 24px;
+    top: 0;
+}
+
+#info .phoneNum .help-block {
+    visibility: hidden;
+    font-size: 28px;
+    font-family: Arial;
+    margin-top: 21px;
+    margin-bottom: 0;
+}
+
+#info .phoneNum .help-block img{
+    width: 32px;
+    height: 32px;
+    margin-right: 10px;
+}
+#info .phoneNum .help-block label{
+    font-weight: lighter;
+}
+
+#info .message {
+    margin-top: -30px;
+    /*position: absolute;*/
+}
+
+@media screen and (max-width: 640px) {
+    #info .message {
+        margin-top: 0;
+    }
+}
+#info .message textarea {
+    width: 100%;
+    height: 185px;
+    border-radius: 0;
+    -webkit-box-shadow: inset 0 1px 2px #c0c0c0;
+    -moz-box-shadow: inset 0 1px 2px #c0c0c0;
+    box-shadow: inset 0 1px 2px #c0c0c0;
+}
+
+#info .options {
+    border-top: 2px solid #dddddd;
+    border-bottom: 2px solid #dddddd;
+    padding-top: 41px;
+    padding-bottom: 36px;
+}
+
+@media screen and (max-width: 640px) {
+    #info .options {
+        padding-top: 35px;
+
+    }
+}
+#info .options #registerOption, #info .options #business, #info .termAccept #acceptBtn{
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-right: 17px;
+    margin-bottom: 31px;
+}
+
+
+#info .optionalBtn {
+    display: none;
+}
+#info .optional {
+    padding-right: 41px;
+    margin-top: 36px;
+}
+
+#info .businessTerm {
+    white-space: normal;
+    padding: 0;
+}
+
+#info .businessTerm div {
+    padding: 0;
+}
+
+#info .termDetail {
+    margin-left: -40px;
+}
+
+@media screen and (max-width: 640px) {
+    #info .termDetail {
+        margin-left: -15px;
+    }
+}
+#info .termDetail .note {
+    color: #aaaaaa;
+    font-size: 20px;
+}
+#info .termAccept p {
+    color: #888888;
+    font-size: 18px;
+    margin-left: 37px;
+}
+#info .termAccept a {
+    display: inline-block;
+}
+@media screen and (max-width: 640px) {
+    #info .termAccept {
+        white-space: normal;
+        padding-right: 80px;
+        margin-bottom: 40px;
+    }
+    #info .termAccept a {
+        display: block;
+        margin-left: 40px;
+    }
+}
+
+.submit {
+    display: block;
+    position: relative;
+    border-bottom: 2px solid #dddddd;
+
+}
+
+.submitBtn {
+    width: 310px;
+    height: 60px;
+    margin-bottom: 180px;
+
+    font-size: 24px;
+    color: white;
+    border: 0 solid transparent;
+    border-radius: 4px;
+    background-color: #d00000;
+    -webkit-box-shadow: 2px 2px 1px #880000;
+    -moz-box-shadow: 2px 2px 1px #880000;
+    box-shadow: 2px 2px 1px #880000;
+}
+
+@media screen and (max-width: 640px) {
+    .submit {
+        padding: 0;
+    }
+    .submitBtn {
+        width: 100%;
+        margin-bottom: 40px;
+
+    }
+}
+footer {
+    padding-top: 30px;
+    padding-left: 88px;
+}
+footer .copy {
+    font-size: 18px;
+    color:#595959;
+    margin-bottom: 310px;
+    letter-spacing: normal;
+    line-height: 10px;
+}
+@media screen and (max-width: 640px) {
+    footer {
+        padding-left: 0;
+    }
+    footer .copy {
+        text-align: center;
+        margin-bottom:86px;
+
+    }
+}
+
+/*checkbox change color*/
+
+input[type="checkbox"]:checked + label:after {
+    content: '';
+    position: absolute;
+    width: 12px;
+    height: 7px;
+    background: rgba(0, 0, 0, 0);
+    top: 20px;
+    left: 4px;
+    border: 2px solid white;
+    border-top: none;
+    border-right: none;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+
+input[type="checkbox"] {
+    line-height: 2.1ex;
+}
+
+input[type="checkbox"] {
+    position: absolute;
+    left: -999em;
+}
+
+input[type="checkbox"] + label {
+    position: relative;
+    overflow: hidden;
+    cursor: pointer;
+    margin-bottom: 0;
+}
+#business+label {
+    margin-top: -12px;
+}
+
+input[type="checkbox"] + label:before {
+    content: "";
+    display: inline-block;
+    vertical-align: -25%;
+    height: 20px;
+    width: 20px;
+    background-color: white;
+    border: 1px solid rgb(166, 166, 166);
+    -webkit-box-shadow: inset 0 2px 5px rgba(0,0,0,0.25);
+    -moz-box-shadow: inset 0 2px 5px rgba(0,0,0,0.25);
+    box-shadow: inset 0 2px 5px rgba(0,0,0,0.25);
+    margin-right: 0.5em;
+}
+
+input[type="checkbox"]:checked + label:before {
+    background: red;
+    border: 1px solid transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+#business:checked +label:before {
+    background: blue;
+    border: 1px solid transparent;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+}
+
+
